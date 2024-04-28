@@ -10,4 +10,8 @@
     <PackageId>shockz-wpfapp1</PackageId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="shockz.Wpf" Version="24.4.28.1019" />
+  </ItemGroup>
+
 </Project>

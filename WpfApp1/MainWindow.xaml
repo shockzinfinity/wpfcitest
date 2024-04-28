@@ -3,6 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:shockz="https://shockz.io/xaml/presentation"
         mc:Ignorable="d"
         Title="Class Command" Height="450" Width="800">
   <Grid MaxWidth="1000">
@@ -22,7 +23,15 @@
         <RowDefinition Height="auto" />
         <RowDefinition Height="auto" />
       </Grid.RowDefinitions>
-      <TextBlock Grid.Row="0" HorizontalAlignment="Center" FontSize="28" Text="Buy" />
+
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="32" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <shockz:shockzIcon Grid.Column="0" Icon="FolderOutline" />
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" FontSize="28" Text="Buy" />
+      </Grid>
 
       <Grid Grid.Row="1" Margin="0 20 0 0">
         <Grid.ColumnDefinitions>
@@ -73,10 +82,14 @@
         <RowDefinition Height="auto" />
       </Grid.RowDefinitions>
 
-      <TextBlock Grid.Row="0"
-                HorizontalAlignment="Center"
-                FontSize="28"
-                Text="Sell" />
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="32" />
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <shockz:shockzIcon Grid.Column="0" Icon="FolderOutline" />
+        <TextBlock Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" FontSize="28" Text="Sell" />
+      </Grid>
 
       <Grid Grid.Row="1" Margin="0 20 0 0">
         <Grid.ColumnDefinitions>
