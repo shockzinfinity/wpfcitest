@@ -7,6 +7,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>shockz-wpfapp1</PackageId>
   </PropertyGroup>
 
 </Project>
